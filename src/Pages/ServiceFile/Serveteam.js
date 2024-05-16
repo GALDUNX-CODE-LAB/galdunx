@@ -13,7 +13,7 @@ const Serveteam = () => {
     {
         Teamserve.map((x)=>{
             return(
-            <div className='w-[100%] md:w-[25%] lg:w-[30%]  text-white text-left'>
+            <div key={x.id} className='w-[100%] md:w-[25%] lg:w-[30%]  text-white text-left'>
                 <img src={x.image}/>
                 <h1 className='font-bold text-[24px] mb-3'>{x.name}</h1>
                 <p className='text-[11px] md:text-sm lg:text-lg'>{x.writeup}</p>

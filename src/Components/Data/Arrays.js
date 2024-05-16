@@ -13,6 +13,9 @@ import envision from '../Imagefile/envisiongrey.png'
 import prooflogo from '../Imagefile/proof.png'
 import speakerlogo from '../Imagefile/speaker.png'
 import brightlogo from '../Imagefile/bright.png'
+import graphics1 from '../Imagefile/imagedes1.png'
+import graphics2 from '../Imagefile/imagedes3.png'
+import graphics3 from '../Imagefile/imagedes2.png'
 import { TiPlusOutline } from "react-icons/ti";
 
 export const navlinks = [
@@ -300,6 +303,33 @@ export const devservice =[
         writeup:"life is like an egg shall it’s very easy to crack like a crack head that’s in love with cocaine daymmmm!!!! not even gon lie bruv like is a fucking film in a world of underdtanding shit ",
         initialbutton: 'Token Development',
         seccondbutton: 'Smart Contract Development'
+    },
+]
+
+export const successdiv = [
+    {
+        id: 1,
+        name:'Graphics Design',
+        image: graphics1,
+        writeup:'Galdunx: Elevating brands with creative graphic design solutions for logos,  Brand Identity, social media, and more.'
+    },
+      {
+        id: 2,
+        name:'Web Design',
+        image: graphics2,
+        writeup:'Galdunx: Where every pixel counts. We specialize in crafting bespoke websites that not only captivate but also convert.'
+    },
+     {
+        id: 3,
+        name:'UI/UX Design',
+        image: graphics3,
+        writeup:'Galdunx also specializes in UI/UX design, creating seamless digital experiences that delight users and drive engagement.'
+    },
+     {
+        id: 4,
+        name:'Web Design',
+        image: graphics2,
+        writeup:'Galdunx: Where every pixel counts. We specialize in crafting bespoke websites that not only captivate but also convert.'
     },
 ]
 

@@ -1,15 +1,16 @@
 import React from "react";
 import { CiCirclePlus } from "react-icons/ci";
 import { navlinks, socialLinks } from "../Data/Arrays";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
+    const navigate = useNavigate()
   return (
     <div className="py-[7%] px-8 md:px-20  bg-[#1C1C1C]">
       <h2 className="text-[#7F7878] text-[20px] md:text-[35px] font-semibold">Excited?</h2>
       <h1 className="text-[30px] md:text-[70px] text-white font-bold mb-2 flex items-center gap-0 md:gap-3">
-        Let's Work Together!
-        <CiCirclePlus />{" "}
+        Let's Work Together! 
+        <CiCirclePlus onClick={()=> navigate('/contact') } className="hover:text-[#B9DE2C] hover:cursor-pointer" />{" "}
       </h1>
       <p className="text-white text-[14px] mb-[7%] md:mb-[5%] w-[100%] md:w-[60%] lg:w-[35%] text-left">
         our success in collaborating with client is determined by effictive

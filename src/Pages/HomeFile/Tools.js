@@ -7,7 +7,7 @@ import { GoArrowUpRight } from "react-icons/go";
 const Tools = () => {
     const items = worktools.map((x)=>{
         return(
-            <div className='bg-[#333B10] px-[15px] py-[15px] flex flex-col gap-10 ml-[10px]'>
+            <div key={x.id} className='bg-[#333B10] px-[15px] py-[15px] flex flex-col gap-10 ml-[10px]'>
                 <div className='flex justify-between'>
                     <h2 className='w-[65%] text-white text-[18px] lg:text-[25px] text-left'>{x.name}</h2>
                     <img src={x.logo} alt={x.name} className='w-[55px] h-[55px] md:w-[75px] md:h-[75px]'/>
