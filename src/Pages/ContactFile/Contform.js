@@ -21,11 +21,11 @@ const Contform = () => {
         </div>
         <div className='items-center flex justify-center'>
             <form className='w-[100%] md:w-[70%] mt-[3%] '>
-            <input type='email' className='text-white font-bold p-[5px] w-[100%] ring-[2px] ring-[#B9DE2C] outline-none bg-transparent rounded-md mb-[2%] ' placeholder='Email:'/>
-            <input type='text' className='text-white font-bold p-[5px] w-[100%] ring-[2px] ring-[#B9DE2C] outline-none bg-transparent rounded-md mb-[2%]' placeholder='Name:'/>
-            <input type='number' className='text-white font-bold p-[5px] w-[100%] ring-[2px] ring-[#B9DE2C] outline-none bg-transparent rounded-md mb-[2%]' placeholder='Number:'/>
-            <textarea name='comments' id='comments' rows='4' cols='4' placeholder='Message:' className='text-white font-bold p-[5px] w-[100%] ring-[2px] ring-[#B9DE2C] outline-none bg-transparent rounded-md mb-[3%]'></textarea>
-               <button className='text-white font-bold bg-gradient-to-b  from-[#95B809] to-[#425204] px-[25px] py-[10px] rounded-2xl hover:bg-[#B9DE2C] hover:font-bold'>Submit</button>
+            <input type='email' className='text-white font-bold p-[5px] w-[100%] ring-[2px] ring-[#95B809] outline-none bg-transparent rounded-md mb-[2%] ' placeholder='Email:'/>
+            <input type='text' className='text-white font-bold p-[5px] w-[100%] ring-[2px] ring-[#95B809] outline-none bg-transparent rounded-md mb-[2%]' placeholder='Name:'/>
+            <input type='number' className='text-white font-bold p-[5px] w-[100%] ring-[2px] ring-[#95B809] outline-none bg-transparent rounded-md mb-[2%]' placeholder='Number:'/>
+            <textarea name='comments' id='comments' rows='4' cols='4' placeholder='Message:' className='text-white font-bold p-[5px] w-[100%] ring-[2px] ring-[#95B809] outline-none bg-transparent rounded-md mb-[3%]'></textarea>
+               <button className='text-white font-bold bg-gradient-to-b  from-[#95B809] to-[#425204] px-[25px] py-[10px] rounded-2xl hover:bg-[#D3FF25] hover:font-bold'>Submit</button>
         </form>
         </div>
         

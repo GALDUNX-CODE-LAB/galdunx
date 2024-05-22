@@ -13,7 +13,7 @@ const Newscont = () => {
             </div>
             <form className=' mt-[5%] md:mt-0'>
                 <input className='w-[100%] p-[10px] rounded-2xl bg-[#666666] text-white outline-none ' placeholder='Email:'/>
-                <button className='text-white font-bold bg-gradient-to-b mt-[3%]  from-[#95B809] to-[#425204] px-[25px] py-[10px] rounded-2xl hover:bg-[#B9DE2C] hover:font-bold'>Submit</button>
+                <button className='text-white font-bold bg-gradient-to-b mt-[3%]  from-[#95B809] to-[#425204] px-[25px] py-[10px] rounded-2xl hover:bg-[#D3FF25] hover:font-bold'>Submit</button>
 
             </form>
         </div>

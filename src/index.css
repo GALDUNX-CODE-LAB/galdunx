@@ -22,7 +22,19 @@
     animation: spin 4s linear infinite;
   }
   
- 
+ .link{
+  /* text-gray-300 font-bold text-[20px] */
+  font-weight: bold;
+  color: rgba(128, 128, 128, 0.663);
+  font-size: 20px;
+
+ }
+  
+ .active{
+  color: rgb(149, 184, 9);
+  font-size: 20px;
+  font-weight: bold;
+ }
   @-moz-keyframes spin {
     100% {
       -moz-transform: rotate(360deg);

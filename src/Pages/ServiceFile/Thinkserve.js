@@ -9,7 +9,7 @@ const Thinkserve = () => {
       </div>
       <div className="w-[100%] md:w-[45%]">
         <h1 className="text-[30px] lg:text-[48px] md:text-[40px] font-bold text-white mb-[5%]">
-          What Is It Like To Work With <span className="text-[#B9DE2C]"> Us</span>
+          What Is It Like To Work With <span className="text-[#D3FF25]"> Us</span>
         </h1>
         <p className="text-white">
           you are the only chicken in my life right now and i wanna eat you like

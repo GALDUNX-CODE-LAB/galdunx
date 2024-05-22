@@ -13,7 +13,7 @@ const Abousuccess = () => {
                <img src={x.image} alt={x.name} className='block w-[100%]'/>
                <h1 className='my-[3%] text-[20px] font-bold lg:text-[30px]'>{x.name}</h1>
                <p className='text-sm mb-[4%]' >{x.writeup}</p>
-               <button className='bg-gradient-to-b from-[#95B809] to-[#425204] px-[15px] py-[10px] rounded-2xl hover:bg-[#B9DE2C] hover:font-bold'>View service</button>
+               <button className='bg-gradient-to-b from-[#95B809] to-[#425204] px-[15px] py-[10px] rounded-2xl hover:bg-[#D3FF25] hover:font-bold'>View service</button>
 
             </div>
         )

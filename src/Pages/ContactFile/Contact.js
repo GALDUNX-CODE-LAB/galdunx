@@ -13,7 +13,7 @@ const Contact = () => {
         <div className="absolute bottom-[20%] left-0">
             <img src={Eclipse2}/>
         </div>
-       <div className="text-center flex flex-col justify-center items-center py-5 px-8 md:px-2  md:py-[4%]">
+       <div className="text-center flex flex-col justify-center items-center pb-5 pt-[25%] px-8 md:px-20  md:py-[10%]  ">
         <h1 className="text-[30px] md:text-[40px]  text-[#D3FF25] mb-[1%] font-bold md:font-extrabold text-center">
           Contact Us
         </h1>
