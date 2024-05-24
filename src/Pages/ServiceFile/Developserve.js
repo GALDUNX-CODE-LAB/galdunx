@@ -1,7 +1,9 @@
 import React from 'react'
 import { devservice } from '../../Components/Data/Arrays';
+import { useNavigate } from 'react-router-dom';
 
 const Developserve = () => {
+  const navigate = useNavigate()
   return (
      <div className="pt-5 pb-10 px-8 md:px-20 md:py-[4%] bg-black">
       <h1 className="mb-[3%] text-white text-[30px] md:text-[48px] font-extrabold">
@@ -36,7 +38,7 @@ const Developserve = () => {
 
       <div className='flex flex-col md:flex-row justify-center gap-3 md:gap-0 md:justify-between mt-[5%]'>
         <h1 className='font-bold text-white text-[20px]'>Have Any Other <span className='text-[#D3FF25] '> Tech Services </span> You Want Us To Work On?</h1>
-         <button className='bg-[#D3FF25] px-4 py-2.5 rounded-3xl text-black text-[18px] md:text-lg'> contact us</button>
+         <button onClick={()=>navigate('/contact')} className='bg-[#D3FF25] px-4 py-2.5 rounded-3xl text-black text-[18px] md:text-lg'> contact us</button>
       </div>
     </div>
   )

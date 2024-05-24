@@ -234,24 +234,25 @@ export const think = [
 export const dservice = [
     {
         id: 1,
-        name: 'Web App Design',
-        writeup:'im the big breet so stay away from me cause i got den balls to crush you danu dabu stay safe in these street'
+        name: 'Web Application',
+        writeup:'We create custom web applicatons as new system, or as a backend to existing applications. We can build your application from scratch, or rebuild a previous application into a modern web-based system'
     },
+    
      {
         id: 2,
-        name: 'Mobile Design',
-        writeup:'im the big breet so stay away from me cause i got den balls to crush you danu dabu stay safe in these street'
+        name: 'UI/ UX Design',
+        writeup:'The first phase of any project with Galdunx is the planning phase, and the User Experience and interface design are often the most important part. We collaborate closely with you on designing the initial wireframe, and ultimately produce the final high-fidelity design to be used in your application '
     },
      {
         id: 3,
-        name: 'Website Design',
-        writeup:'im the big breet so stay away from me cause i got den balls to crush you danu dabu stay safe in these street'
-    },
+        name: 'Graphics Design',
+        writeup: 'Galdunx: Elevating brands with creative graphic design solutions for logos, Brand Identity, social media, and more.'
+      },
      {
         id: 4,
-        name: 'Graphics Design',
-        writeup:'im the big breet so stay away from me cause i got den balls to crush you danu dabu stay safe in these street'
-    },
+        name: 'Software Support',
+        writeup: 'From hosting to maintainence to code support, we can custom-tailor a package that make sense for your business or project, at a budget you can work with. Our senior-level engineers provide 24/7 emergency response support, and proactive support to help avoid costly surprises or downtime'
+      },
 ]
 
 
@@ -259,19 +260,19 @@ export const Teamserve = [
     {
         id: 1,
         name:'Efficient Team Communication',
-        writeup:"nahhhhhh niggas be hating and be lackin asf manyall think bussing a nut is cool until you die ohh my day man he lacking and hes tryna go dee into the loght of chicken ass and cay and shout omg!!!!! ayyy listen yea, mandem got the g’s and i’m coming with the smoke to burn you down and you shall cry like a fucking baby you fucking idiocit donkey allow me.",
+        writeup: "Efficient team communication is our cornerstone. Using advanced collaboration tools, we ensure seamless cordination, quick response, and timely updates, keeping your projects on track. Our commitment to clear communication guarantees you're informed and engaged throughout the process",
         image: speakerlogo,
     },
     {
         id: 2,
         name:'Research Driven Success',
-        writeup:"nahhhhhh niggas be hating and be lackin asf manyall think bussing a nut is cool until you die ohh my day man he lacking and hes tryna go dee into the loght of chicken ass and cay and shout omg!!!!! ayyy listen yea, mandem got the g’s and i’m coming with the smoke to burn you down and you shall cry like a fucking baby you fucking idiocit donkey allow me.",
+        writeup: "At Galdunx, research-driven success is our foundation. By leveraging in-depth research and data analysis, we ensure our solutions are innovative and tailored to your specific needs. this commitment to research allows us to stay ahead of industry trends and deliver expectional results",
         image: brightlogo,
     },
       {
         id: 3,
         name:'Future Proof Devlopment',
-        writeup:"nahhhhhh niggas be hating and be lackin asf manyall think bussing a nut is cool until you die ohh my day man he lacking and hes tryna go dee into the loght of chicken ass and cay and shout omg!!!!! ayyy listen yea, mandem got the g’s and i’m coming with the smoke to burn you down and you shall cry like a fucking baby you fucking idiocit donkey allow me.",
+        writeup:"In an ever-evolving digital landscape, Future-proof development is our promise. We leverage the latest technologies and best practices to create scalable sustainable solutions that stand the test of time. Our commitment to future proofing ensures your project remain relevant and adaptable to evolving market trends",
         image : prooflogo
     },
 ]
@@ -327,7 +328,7 @@ export const successdiv = [
     },
      {
         id: 4,
-        name:'Web Design',
+        name:'Mobile Application',
         image: graphics2,
         writeup:'Galdunx: Where every pixel counts. We specialize in crafting bespoke websites that not only captivate but also convert.'
     },

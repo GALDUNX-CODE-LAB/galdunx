@@ -12,7 +12,7 @@ const About = () => {
         <div className="absolute bottom-[20%] left-0">
             <img src={Eclipse2}/>
         </div>
-      <div className="text-center flex flex-col justify-center pb-5 pt-[25%] md:pt-[13%] lg:pt-[10%] px-8 md:px-2 ">
+      <div className="text-center flex flex-col justify-center pb-9 pt-[30%] md:pt-[15%] lg:pt-[10%] px-8 md:px-2 ">
         <h1 className="text-[30px] md:text-[40px]  text-[#D3FF25] mb-[1%] font-bold md:font-extrabold text-center">
           About Us
         </h1>

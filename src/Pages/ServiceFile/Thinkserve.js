@@ -11,13 +11,11 @@ const Thinkserve = () => {
         <h1 className="text-[30px] lg:text-[48px] md:text-[40px] font-bold text-white mb-[5%]">
           What Is It Like To Work With <span className="text-[#D3FF25]"> Us</span>
         </h1>
-        <p className="text-white">
-          you are the only chicken in my life right now and i wanna eat you like
-          egg in a nut shell and make you see am te one for you and a chicken is
-          always going to cry whenever you steal itd child from it breath air
-          motherfuckers Rahhhhh thats the sound of a fucking ghost now lemme
-          tell you why i hate niggers with bad breath cause why tf fuck is you
-          gon’ nut in your mouth and call it a nut scak you fucking donkey..
+        <p className="text-white text-[15px]">
+         At Galdunx, we deliver top-tier technology solutions tailored to your business needs. Our expert teams excels in cutting-edge
+         tools like Next.js, React, Angular, Figma, Material UI, Node.js, PHP, Firebase, ensuring innovative and high-quality results. We 
+         prioritize underdtanding your objectives and maintaining a transparent, client-centric approach, guaranteeing excellence from concept to completion.
+         Partner with us to navigate the digital landscape and achieve your goals with confidence. Contact us today to transform your ideas into reality
         </p>
       </div>
     </div>

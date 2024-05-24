@@ -9,7 +9,7 @@ import Approachserve from './Approachserve'
 const Service = () => {
   return (
     <>
-        <div className='pb-5 pt-[25%] md:pt-[13%] lg:py-[10%] bg-black relative'>
+        <div className='pb-5 pt-[30%] md:pt-[13%] lg:py-[10%] bg-black relative'>
          <div className='absolute w-[100px] md:w-[300px] bottom-0 left-0 '>
         <img src={ximage} alt='name'/>
       </div>

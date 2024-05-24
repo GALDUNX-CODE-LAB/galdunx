@@ -10,6 +10,21 @@
 .first::-webkit-scrollbar{
   width: 0px;
 }
+
+.gifdiv{
+  animation: guy_animate 3s ease infinite 1s;
+}
+@keyframes guy_animate{
+  0%{
+    transform: translateY(-15px);
+  }
+  50%{
+    transform: translateY(-3px);
+  }
+  100%{
+    transform: translateY(-15px);
+  }
+}
 .uniqueone {
   /* color: black; */
     -webkit-text-fill-color: black;

@@ -1,7 +1,9 @@
 import React from "react";
 import { servicebutton } from "../../Components/Data/Arrays";
+import { useNavigate } from "react-router-dom";
 
 const Homeservice = () => {
+  const navigate = useNavigate()
   return (
     <div className="py-5 px-8 md:px-20 md:py-[4%] flex-col text-center flex gap-3 items-center bg-gradient-to-b from-[#4B7B2A] to-[#343633]">
       <h1 className="text-[30px] md:text-[40px] md:w-[75%]  text-white font-bold md:font-extrabold text-center">
@@ -22,7 +24,7 @@ const Homeservice = () => {
 
       <h3 className="text-white mt-[4%] md:w-[70%] "> Revolutionize your business with our mobile app and software development expertise, delivering innovative solutions to elevate your brand and boost your bottom </h3>
 
-      <button className="text-[17px] md:text-[25px] bg-white font-bold px-[15px] py-[10px] mt-[3%] rounded-3xl hover:bg-[#D3FF25] hover:text-white "> More about our service </button>
+      <button onClick={()=> navigate('/service')} className="text-[17px] md:text-[25px] bg-white font-bold px-[15px] py-[10px] mt-[3%] rounded-3xl hover:bg-[#D3FF25] hover:text-gray-400 "> More about our service </button>
     </div>
   );
 };

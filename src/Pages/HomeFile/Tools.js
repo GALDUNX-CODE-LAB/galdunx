@@ -35,7 +35,7 @@ const Tools = () => {
     <AliceCarousel
     mouseTracking
     infinite
-    autoPlayInterval={1500}
+    autoPlayInterval={1000}
     animationDuration={1000}
     disableButtonsControls
     disableDotsControls
