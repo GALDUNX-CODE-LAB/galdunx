@@ -9,7 +9,7 @@ const Newscont = () => {
    <div className='flex flex-col md:flex-row items-center justify-center md:justify-between '>
             <div className='text-white w-[100%] md:w-[45%] text-left'>
                 <h1 className='font-bold mb-[2%]  text-white text-[18px] md:text-[20px] lg:text-[25px]'>Our Newsletters</h1>
-                <p className='text-[15px]'>Discover the latest in design, innovation, and industry insights with Galdunx's newsletter. Stay informed, inspired, and connected with us! Subscribe now.</p>
+                <p className='text-[15px] md:text-[18px]'>Discover the latest in design, innovation, and industry insights with Galdunx's newsletter. Stay informed, inspired, and connected with us! Subscribe now.</p>
             </div>
             <form className=' mt-[5%] md:mt-0'>
                 <input className='w-[100%] p-[10px] rounded-2xl bg-[#666666] text-white outline-none ' placeholder='Email:'/>

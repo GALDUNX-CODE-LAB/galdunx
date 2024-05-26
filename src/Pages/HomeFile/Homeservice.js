@@ -22,7 +22,7 @@ const Homeservice = () => {
         })}
       </div>
 
-      <h3 className="text-white mt-[4%] md:w-[70%] "> Revolutionize your business with our mobile app and software development expertise, delivering innovative solutions to elevate your brand and boost your bottom </h3>
+      <h3 className="text-white text-[15px] md:text-[18px] mt-[4%] md:w-[70%] "> Revolutionize your business with our mobile app and software development expertise, delivering innovative solutions to elevate your brand and boost your bottom </h3>
 
       <button onClick={()=> navigate('/service')} className="text-[17px] md:text-[25px] bg-white font-bold px-[15px] py-[10px] mt-[3%] rounded-3xl hover:bg-[#D3FF25] hover:text-gray-400 "> More about our service </button>
     </div>

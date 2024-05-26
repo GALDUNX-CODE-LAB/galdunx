@@ -17,7 +17,7 @@ const Contact = () => {
         <h1 className="text-[30px] md:text-[40px]  text-[#D3FF25] mb-[1%] font-bold md:font-extrabold text-center">
           Contact Us
         </h1>
-        <p className='text-white w-[100] md:w-[70%] text-center'>
+        <p className='text-white w-[100] md:w-[70%] text-[15px] md:text-[18px] text-center'>
             Have questions or ready to start your project? Reach out to us today! Our team at Galdunx is here to 
 assist you every step of the way. Whether you're looking to discuss a potential collaboration, need support 
 with an ongoing project, or simply want to learn more about our services, we're just a click away. Drop us a message, 

@@ -12,7 +12,7 @@ const Footer = () => {
         Let's Work Together! 
         <CiCirclePlus onClick={()=> navigate('/contact') } className="hover:text-[#B9DE2C] hover:cursor-pointer" />{" "}
       </h1>
-      <p className="text-white text-[14px] mb-[7%] md:mb-[5%] w-[100%] md:w-[60%] lg:w-[35%] text-left">
+      <p className="text-white text-[15px] md:text-[18px] mb-[7%] md:mb-[5%] w-[100%] md:w-[60%] lg:w-[35%] text-left">
         Our success in collaborating with client is determined by effictive
         communication, mutual understanding and a share commitment in achieving
       </p>

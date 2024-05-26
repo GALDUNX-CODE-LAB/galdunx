@@ -7,7 +7,7 @@ const Approachserve = () => {
         <h1 className="text-[30px] lg:text-[48px] md:text-[40px] font-bold text-white mb-[5%]">
           We <span className="text-[#D3FF25] ">Tailor</span> Our Approach To Your Needs
         </h1>
-        <p className="text-white">
+        <p className="text-white text-[15px] md:text-[18px]">
           Your vision is our blueprint at Galdunx. We believe that every client is unique, and so is every project. By deeply understanding
           your specific goals and challenges, we tailor our approach to meet your unique needs, ensuring that every solution is perfectly customized for your business. 
           Our commitment to personalization means that each project is meticulously aligned with your objectives, delivering results that not meets but exceed your expectations

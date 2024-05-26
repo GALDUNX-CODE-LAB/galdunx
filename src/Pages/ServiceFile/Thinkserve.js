@@ -11,7 +11,7 @@ const Thinkserve = () => {
         <h1 className="text-[30px] lg:text-[48px] md:text-[40px] font-bold text-white mb-[5%]">
           What Is It Like To Work With <span className="text-[#D3FF25]"> Us</span>
         </h1>
-        <p className="text-white text-[15px]">
+        <p className="text-white text-[15px] md:text-[18px]">
          At Galdunx, we deliver top-tier technology solutions tailored to your business needs. Our expert teams excels in cutting-edge
          tools like Next.js, React, Angular, Figma, Material UI, Node.js, PHP, Firebase, ensuring innovative and high-quality results. We 
          prioritize underdtanding your objectives and maintaining a transparent, client-centric approach, guaranteeing excellence from concept to completion.

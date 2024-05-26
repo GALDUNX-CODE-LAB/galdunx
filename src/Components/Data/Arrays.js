@@ -4,9 +4,9 @@ import { PiDiamondsFourDuotone } from "react-icons/pi";
 import { IoRocketSharp, IoSettingsSharp } from "react-icons/io5";
 import { GiBleedingEye, GiLightBulb } from "react-icons/gi";
 import { TbBuildingFactory } from "react-icons/tb";
-import figmalogo from "../Imagefile/figmalogo.png";
-import awslogo from "../Imagefile/awslogo.png";
-import wordpresslogo from "../Imagefile/wordpresslogo.png";
+import nodelogo from "../Imagefile/nodeess.png";
+import awslogo from "../Imagefile/awsess.png";
+import javascript from "../Imagefile/javascript.png";
 import buildlogo from '../Imagefile/build.png'
 import bulblogo from '../Imagefile/bulblogo.png'
 import envision from '../Imagefile/envisiongrey.png'
@@ -16,6 +16,11 @@ import brightlogo from '../Imagefile/bright.png'
 import graphics1 from '../Imagefile/imagedes1.png'
 import graphics2 from '../Imagefile/imagedes3.png'
 import graphics3 from '../Imagefile/imagedes2.png'
+import php from '../Imagefile/phpess.png'
+import angular from '../Imagefile/angular.png'
+import htmlcss from '../Imagefile/htmlcss.png'
+import java from '../Imagefile/java.png'
+import reactlogo from '../Imagefile/reactess.png'
 import { TiPlusOutline } from "react-icons/ti";
 
 export const navlinks = [
@@ -158,27 +163,43 @@ export const servicebutton = [
 export const worktools = [
   {
     id: 1,
-    logo: figmalogo,
-    name: "Design with Adobe's Figma",
-    writeup: "from a black canvas o clean creative prototype",
+    logo: nodelogo,
+ 
   },
   {
     id: 2,
     logo: awslogo,
-    name: "Cloud Computing",
-    writeup: "Building Flexible, Scalable And Cloud-Effective Solution",
+  
   },
   {
     id: 3,
-    logo: wordpresslogo,
-    name: "Word Press Website",
-    writeup: "For Highly Customable Business or Eccomemerce CMS site",
+    logo: javascript,
+
   },
   {
     id: 4,
-    logo: figmalogo,
-    name: "Fullstack Application",
-    writeup: "Fast Modern SOE Friendly Appilication",
+    logo: reactlogo,
+ 
+  },
+   {
+    id: 5,
+    logo: php,
+
+  },
+   {
+    id: 6,
+    logo: htmlcss,
+    
+  },
+   {
+    id: 7,
+    logo: angular,
+   
+  },
+   {
+    id: 8,
+    logo: java,
+  
   },
 ];
 
@@ -280,28 +301,28 @@ export const Teamserve = [
 export const devservice =[
     {
         id: 1,
-        name:'Web Devlopment',
-        writeup:"life is like an egg shall it’s very easy to crack like a crack head that’s in love with cocaine daymmmm!!!! not even gon lie bruv like is a fucking film in a world of underdtanding shit ",
+        name:'Web Development',
+        writeup: "Redefine your online presence with Galdunx exceptional web development services. Transform your digital strategy with bespoke web solutions that stands out",
         initialbutton: 'Website',
         seccondbutton: 'Web App'
     },
         {
         id: 2,
         name:'Mobile Dvelopment',
-        writeup:"life is like an egg shall it’s very easy to crack like a crack head that’s in love with cocaine daymmmm!!!! not even gon lie bruv like is a fucking film in a world of underdtanding shit ",
+        writeup: "Transform your mobile strategy and engage your audience with innovative, custom-built solutions. Our talented team creates high performance, user-friendly mobile apps tailored to your business needs",
         initialbutton: 'Cross Platforms',
         seccondbutton: 'Native Ios & Andriod'
     },
         {
         id: 3,
         name:'Gitbooks',
-        writeup:"life is like an egg shall it’s very easy to crack like a crack head that’s in love with cocaine daymmmm!!!! not even gon lie bruv like is a fucking film in a world of underdtanding shit ",
+        writeup: 'Our skilled team craft engaging, well structured content, making your knowledge base accesible and easy easy to navigate. We provide end-to-end service, from initial setup to customization and development, tailored to your needs.',
         initialbutton: 'Researching',
     },
       {
         id: 4,
         name:'Blockchain Development',
-        writeup:"life is like an egg shall it’s very easy to crack like a crack head that’s in love with cocaine daymmmm!!!! not even gon lie bruv like is a fucking film in a world of underdtanding shit ",
+        writeup: "Unlock the potential of blockchain with Galdunx. Our expert team develops secure, transparent, and cutomized blockchainn solution, including DApps, smart contract, and comprehensive blockchain strategies",
         initialbutton: 'Token Development',
         seccondbutton: 'Smart Contract Development'
     },

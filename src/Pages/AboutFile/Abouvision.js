@@ -5,7 +5,7 @@ const Abouvision = () => {
   return (
     <div className="bg-[#d9d9d90c] text-center py-5 px-8  ring-gray-600 ring-1 md:px-20 md:py-[4%] rounded-3xl">
       <div className="flex items-center justify-center">
-        <p className="text-white self-center text-center w-[100%] md:w-[70%]">
+        <p className="text-white self-center text-center w-[100%] md:w-[70%] text-[15px] md:text-[18px]">
           What sets us apart is not just our technical prowess but also our
           unwavering focus on understanding the unique challenges and
           aspirations of our clients.
@@ -24,7 +24,7 @@ const Abouvision = () => {
           <h1 className="text-[30px] md:text-[40px]  text-[#D3FF25] mb-[1%] font-bold md:font-extrabold">
             Our Vision
           </h1>
-          <p className="text-white">
+          <p className="text-white text-[15px] md:text-[18px]">
             To become the foremost innovator in enhancing lives through
             cutting-edge technology, empowering our clients with sustainable
             solutions that inspire progress and elevate experiences.
@@ -37,7 +37,7 @@ const Abouvision = () => {
           <h1 className="text-[30px] md:text-[40px]  text-[#D3FF25] mb-[1%] font-bold md:font-extrabold">
             Our Mission
           </h1>
-          <p className="text-white">
+          <p className="text-white text-[15px] md:text-[18px]">
             At Galdunx, we are dedicated to leveraging our expertise in
             technology to deliver transformative solutions tailored to our
             clients' needs. We are committed to fostering long- term
