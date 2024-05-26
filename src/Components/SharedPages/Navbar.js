@@ -26,7 +26,7 @@ const Navbar = () => {
 
           <div>
             {open && (
-              <div className='fixed top-0 right-0 z-[-1] flex flex-col justify-center items-center w-full h-[450px] p-12 bg-neutral-950  shadow-lg md:w-[40%] md:h-[750px] '  >
+              <div className='fixed top-0 right-0 z-[-1] flex flex-col justify-center items-center w-full h-[700px] p-12 bg-neutral-950  shadow-lg md:w-[40%] md:h-[750px] '  >
                 <ul>
                   {navlinks.map((x) => {
                     return (
