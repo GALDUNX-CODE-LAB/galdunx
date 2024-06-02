@@ -1,13 +1,15 @@
 import React, { useState } from "react";
-import { FaBarsStaggered } from "react-icons/fa6";
-import { FaTimes } from "react-icons/fa";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { navlinks } from "../Data/Arrays";
+
 import galdlogo from "../Imagefile/galdunX Logo.png";
+
 import { Button } from "../ui/button";
+import { Sheet, SheetTrigger } from "../ui/sheet";
 
 import { MdArrowOutward } from "react-icons/md";
 import { MdArrowForward } from "react-icons/md";
+import { HiOutlineMenuAlt1 } from "react-icons/hi";
+import MobileNav from "./MobileNav";
 
 const Navbar = () => {
   const [open, setopen] = useState(false);
@@ -62,9 +64,26 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <Button className="hidden md:flex md:gap-2">
-            Contact Us <MdArrowOutward />
-          </Button>
+          <div>
+            <Link to="contact" className="hidden md:block">
+              <Button className="flex md:gap-2">
+                Contact Us <MdArrowOutward />
+              </Button>
+            </Link>
+            <div className="block md:hidden">
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button
+                    size="sm"
+                    className="bg-transparent px-2 text-lg border-none rounded-full hover:bg-pry group duration-300 transform"
+                  >
+                    <HiOutlineMenuAlt1 className="text-white group-hover:text-black" />
+                  </Button>
+                </SheetTrigger>
+                <MobileNav />
+              </Sheet>
+            </div>
+          </div>
         </div>
       </div>
     </div>

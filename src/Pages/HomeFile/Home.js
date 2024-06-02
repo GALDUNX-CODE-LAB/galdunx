@@ -11,6 +11,7 @@ import phoneimg from "../../Components/Imagefile/iPhone 15@2x.png";
 import Hero from "../../Components/Home/Hero";
 import AboutIntro from "../../Components/Home/AboutIntro";
 import WhatWeDo from "../../Components/Home/WhatWeDo";
+import ToolsWeUse from "../../Components/Home/ToolsWeUse";
 // const image = 'https://assets-global.website-files.com/64350ccbd2c687494da08367/6437840810e84f02e12a08f2_background-grid.svg'
 const Home = () => {
   return (
@@ -18,11 +19,12 @@ const Home = () => {
       <Hero />
       <AboutIntro />
       <WhatWeDo />
+      <ToolsWeUse />
       <Essential />
       {/* <Vision/> */}
-      <Homeservice />
-      <Tools />
-      <Calculation />
+      {/* <Homeservice /> */}
+      {/* <Tools /> */}
+      {/* <Calculation /> */}
       <Envisionpage />
     </>
   );

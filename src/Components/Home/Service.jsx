@@ -6,7 +6,7 @@ const Service = ({ icon, title, description }) => {
       <div className="bg-pry h-16 w-16 flex items-center justify-center rounded-full">
         {icon}
       </div>
-      <h3 className="font-semibold text-xl">{title}</h3>
+      <h4 className="font-semibold text-xl">{title}</h4>
       <p className="text-gray-300">{description}</p>
     </div>
   );
