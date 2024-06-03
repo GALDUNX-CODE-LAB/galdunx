@@ -10,10 +10,10 @@ const Abouvision = () => {
             <img src={realworld} alt="name" />
           </div>
           <div className="text-left">
-            <h1 className="text-3xl text-[#D3FF25] mb-6 font-bold">
+            <h1 className="text-3xl text-[#D3FF25] mb-4 font-bold">
               Our Vision
             </h1>
-            <p className="text-white text-[15px] md:text-[18px]">
+            <p className="text-white">
               Our vision is to be a global leader in technology solutions,
               driving innovation and transforming the digital landscape. We
               aspire to empower businesses and individuals with cutting-edge
@@ -25,10 +25,10 @@ const Abouvision = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
           <div className="order-2 md:order-1">
-            <h1 className="text-3xl text-[#D3FF25] mb-6 font-bold">
+            <h1 className="text-3xl text-[#D3FF25] mb-4 font-bold">
               Our Mission
             </h1>
-            <p className="text-white text-[15px] md:text-[18px]">
+            <p className="text-white">
               Our mission is to deliver exceptional technology solutions that
               meet the evolving needs of our clients. We are committed to
               excellence, innovation, and customer satisfaction. Through our

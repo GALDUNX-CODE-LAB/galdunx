@@ -31,7 +31,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="pt-20 pb-10 bg-[#1C1C1C]">
-      <div className="container max-w-6xl">
+      <div className="container max-w-7xl">
         <div className="space-y-4 mb-8">
           <div className="w-[100px] md:w-[120px]">
             <img src={galdlogo} alt="Galdun" className="block" />
