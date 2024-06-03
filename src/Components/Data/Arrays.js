@@ -17,9 +17,9 @@ import javascript from "../Imagefile/javascript.png";
 import buildlogo from "../Imagefile/build.png";
 import bulblogo from "../Imagefile/bulblogo.png";
 import envision from "../Imagefile/envisiongrey.png";
-import prooflogo from "../Imagefile/proof.png";
-import speakerlogo from "../Imagefile/speaker.png";
-import brightlogo from "../Imagefile/bright.png";
+import prooflogo from "../Imagefile/proof.svg";
+import speakerlogo from "../Imagefile/speaker.svg";
+import brightlogo from "../Imagefile/bright.svg";
 import graphics1 from "../Imagefile/imagedes1.png";
 import graphics2 from "../Imagefile/imagedes3.png";
 import graphics3 from "../Imagefile/imagedes2.png";
@@ -257,31 +257,30 @@ export const think = [
   },
 ];
 
-export const dservice = [
+export const designServices = [
   {
     id: 1,
-    name: "Web Application",
-    writeup:
-      "We create custom web applicatons as new system, or as a backend to existing applications. We can build your application from scratch, or rebuild a previous application into a modern web-based system",
+    title: "UI/UX Design",
+    description:
+      "Our UI/UX design services focus on creating visually appealing and user-friendly interfaces that enhance user satisfaction and engagement. We prioritize usability and aesthetics to ensure your digital products provide a seamless and enjoyable experience for users.",
   },
-
   {
     id: 2,
-    name: "UI/ UX Design",
-    writeup:
-      "The first phase of any project with Galdunx is the planning phase, and the User Experience and interface design are often the most important part. We collaborate closely with you on designing the initial wireframe, and ultimately produce the final high-fidelity design to be used in your application ",
+    title: "Graphic Design",
+    description:
+      "We offer comprehensive graphic design services that cover everything from web graphics to print materials. Our designers work closely with you to create stunning visuals that effectively communicate your brand's message and leave a lasting impression.",
   },
   {
     id: 3,
-    name: "Graphics Design",
-    writeup:
-      "Galdunx: Elevating brands with creative graphic design solutions for logos, Brand Identity, social media, and more.",
+    title: "Branding",
+    description:
+      "Building a strong brand identity is crucial for business success. Our branding services help you create a cohesive and recognizable brand image through strategic design, including logos, color schemes, typography, and more.",
   },
   {
     id: 4,
-    name: "Software Support",
-    writeup:
-      "From hosting to maintainence to code support, we can custom-tailor a package that make sense for your business or project, at a budget you can work with. Our senior-level engineers provide 24/7 emergency response support, and proactive support to help avoid costly surprises or downtime",
+    title: "Product Design",
+    description:
+      "Our product design services are dedicated to designing functional and appealing product interfaces. We ensure that your products are not only visually attractive but also highly usable, enhancing user satisfaction and loyalty.",
   },
 ];
 
@@ -309,37 +308,30 @@ export const Teamserve = [
   },
 ];
 
-export const devservice = [
+export const developmentServices = [
   {
     id: 1,
-    name: "Web Development",
-    writeup:
-      "Redefine your online presence with Galdunx exceptional web development services. Transform your digital strategy with bespoke web solutions that stands out",
-    initialbutton: "Website",
-    seccondbutton: "Web App",
+    title: "Web Development",
+    description:
+      "We specialize in developing custom web applications tailored to your business needs. Our team builds scalable and secure backend systems, ensuring that your web solutions are robust, efficient, and capable of growing with your business.",
   },
   {
     id: 2,
-    name: "Mobile Dvelopment",
-    writeup:
-      "Transform your mobile strategy and engage your audience with innovative, custom-built solutions. Our talented team creates high performance, user-friendly mobile apps tailored to your business needs",
-    initialbutton: "Cross Platforms",
-    seccondbutton: "Native Ios & Andriod",
+    title: "App Development",
+    description:
+      "Our app development services cover both native and cross-platform applications. We create intuitive user experiences and robust performance, ensuring that your mobile applications are both functional and engaging for users.",
   },
   {
     id: 3,
-    name: "Gitbooks",
-    writeup:
-      "Our skilled team craft engaging, well structured content, making your knowledge base accesible and easy easy to navigate. We provide end-to-end service, from initial setup to customization and development, tailored to your needs.",
-    initialbutton: "Researching",
+    title: "Blockchain Development",
+    description:
+      "Innovative blockchain solutions and decentralized applications are at the forefront of our development services. We focus on creating secure and transparent transactions, leveraging blockchain technology to provide cutting-edge solutions for your business.",
   },
   {
     id: 4,
-    name: "Blockchain Development",
-    writeup:
-      "Unlock the potential of blockchain with Galdunx. Our expert team develops secure, transparent, and cutomized blockchainn solution, including DApps, smart contract, and comprehensive blockchain strategies",
-    initialbutton: "Token Development",
-    seccondbutton: "Smart Contract Development",
+    title: "Web3 Solutions",
+    description:
+      "Empower the next generation of the web with our Web3 solutions. We specialize in decentralized technologies and smart contracts, enabling your business to stay ahead in the rapidly evolving digital landscape.",
   },
 ];
 
