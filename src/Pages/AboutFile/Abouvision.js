@@ -1,57 +1,45 @@
 import React from "react";
 import realworld from "../../Components/Imagefile/realworld.png";
-import missionImage from "../../Components/Imagefile/missionimg.png";
+import missionImage from "../../Components/Imagefile/mission.png";
 const Abouvision = () => {
   return (
-    <div className="bg-[#d9d9d90c] text-center py-5 px-8  ring-gray-600 ring-1 md:px-20 md:py-[4%] rounded-3xl">
-      <div className="flex items-center justify-center">
-        <p className="text-white self-center text-center w-[100%] md:w-[70%] text-[15px] md:text-[18px]">
-          What sets us apart is not just our technical prowess but also our
-          unwavering focus on understanding the unique challenges and
-          aspirations of our clients.
-        </p>
-      </div>
-
-      <div className="flex flex-col md:flex-row mt-[3%] gap-10">
-        <div className="w-[100] md:w-[45%] ">
-          <img
-            src={realworld}
-            alt="name"
-            className="outline outline-[#D3FF25] rounded-3xl py-1 px-3"
-          />
-        </div>
-        <div className="w-[100] md:w-[45%] text-left">
-          <h1 className="text-[30px] md:text-[40px]  text-[#D3FF25] mb-[1%] font-bold md:font-extrabold">
-            Our Vision
-          </h1>
-          <p className="text-white text-[15px] md:text-[18px]">
-            To become the foremost innovator in enhancing lives through
-            cutting-edge technology, empowering our clients with sustainable
-            solutions that inspire progress and elevate experiences.
-          </p>
-        </div>
-      </div>
-
-      <div className="flex flex-col-reverse md:flex-row mt-[5%] gap-10">
-        <div className="w-[100] md:w-[45%] text-left">
-          <h1 className="text-[30px] md:text-[40px]  text-[#D3FF25] mb-[1%] font-bold md:font-extrabold">
-            Our Mission
-          </h1>
-          <p className="text-white text-[15px] md:text-[18px]">
-            At Galdunx, we are dedicated to leveraging our expertise in
-            technology to deliver transformative solutions tailored to our
-            clients' needs. We are committed to fostering long- term
-            partnerships, driving innovation, and creating value that propels
-            both our clients and our organization towards mutual success.
-          </p>
+    <div className="bg-[#1C1C1C] py-20">
+      <div className="container max-w-7xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <img src={realworld} alt="name" />
+          </div>
+          <div className="text-left">
+            <h1 className="text-3xl text-[#D3FF25] mb-6 font-bold">
+              Our Vision
+            </h1>
+            <p className="text-white text-[15px] md:text-[18px]">
+              Our vision is to be a global leader in technology solutions,
+              driving innovation and transforming the digital landscape. We
+              aspire to empower businesses and individuals with cutting-edge
+              technology that enhances efficiency, fosters creativity, and
+              facilitates growth.
+            </p>
+          </div>
         </div>
 
-        <div className="w-[100] md:w-[45%] ">
-          <img
-            src={missionImage}
-            alt="name"
-            className="outline outline-[#D3FF25] rounded-3xl py-0.5 px-3"
-          />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+          <div className="order-2 md:order-1">
+            <h1 className="text-3xl text-[#D3FF25] mb-6 font-bold">
+              Our Mission
+            </h1>
+            <p className="text-white text-[15px] md:text-[18px]">
+              Our mission is to deliver exceptional technology solutions that
+              meet the evolving needs of our clients. We are committed to
+              excellence, innovation, and customer satisfaction. Through our
+              comprehensive suite of services, we aim to provide businesses with
+              the tools they need to succeed in a competitive digital world.
+            </p>
+          </div>
+
+          <div className="order-1 md:order-2">
+            <img src={missionImage} alt="name" />
+          </div>
         </div>
       </div>
     </div>
