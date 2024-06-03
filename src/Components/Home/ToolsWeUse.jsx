@@ -39,7 +39,7 @@ function ToolsWeUse() {
 
   return (
     <section className="py-14 bg-black text-white">
-      <div className="container max-w-6xl">
+      <div className="container max-w-7xl">
         <div className="mb-10">
           <h2 className="text-pry underline mb-2">TOOLS WE USE</h2>
           <h3 className="text-3xl font-bold">Our Toolkit</h3>

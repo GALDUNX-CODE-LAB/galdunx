@@ -61,8 +61,8 @@ const Essential = () => {
   ];
   return (
     <section className="bg-black py-10">
-      <div className="container max-w-6xl flex-col md:flex-row flex gap-10  md:items-center">
-        <div className="w-[100%] md:w-[25%]  text-white space-y-5">
+      <div className="container max-w-7xl flex-col md:flex-row flex gap-10  md:items-center">
+        <div className="w-[100%] md:w-[30%]  text-white space-y-5">
           <h3 className="text-3xl font-bold">Our Creative Workflow</h3>
           <div>
             <Link to="/contact">
@@ -73,7 +73,7 @@ const Essential = () => {
           </div>
           {/* <button className='bg-[#7a58ff] px-4 py-2.5 rounded-3xl text-white text-[25px] md:text-sm'> </button>÷ */}
         </div>
-        <div className="w-[100%] md:w-[75%] flex items-center  py-3 px-3  flex-col gap-7  first">
+        <div className="w-[100%] md:w-[60%] flex items-center  py-3 px-3  flex-col gap-7  first">
           {processes.map((process) => {
             return (
               <div

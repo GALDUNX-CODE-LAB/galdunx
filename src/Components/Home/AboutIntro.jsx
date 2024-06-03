@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function AboutIntro() {
   return (
     <section className="py-20 bg-black text-white" id="about-intro">
-      <div className="container max-w-6xl">
+      <div className="container max-w-7xl">
         <div className="mb-10">
           <h2 className="text-pry underline mb-2">WHO ARE WE?</h2>
           <h3 className="text-3xl font-bold">About Us</h3>
