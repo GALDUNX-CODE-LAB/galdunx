@@ -1,10 +1,15 @@
 import Header from "../../Components/SharedPages/Header";
 import React from "react";
 import Projects from "./Projects";
+import HelmetMetaData from "../../Metadata/Helmet";
 
 function Portfolio() {
   return (
     <main className="bg-black">
+      <HelmetMetaData
+        title="Our Portfolio - GaldunX"
+        description="Explore our portfolio to see the diverse range of projects we have successfully delivered, including web apps, UI/UX designs, branding, and more."
+      />
       <Header
         heading={"Explore Our Portfolio"}
         desc={

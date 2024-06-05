@@ -6,7 +6,7 @@ import Service from "../../Pages/ServiceFile/Service";
 import About from "../../Pages/AboutFile/About";
 import Contact from "../../Pages/ContactFile/Contact";
 import Portfolio from "../../Pages/Portfolio/Portfolio";
-import ScrollToTop from "../../ScrollToTop";
+import ScrollToTop from "../../lib/ScrollToTop";
 // import Serviceentry from '../../Pages/Service/Serviceentry'
 
 const Entry = () => {
