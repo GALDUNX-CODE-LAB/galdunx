@@ -5,6 +5,7 @@ import Sharedcomponent from "./Sharedcomponent";
 import Service from "../../Pages/ServiceFile/Service";
 import About from "../../Pages/AboutFile/About";
 import Contact from "../../Pages/ContactFile/Contact";
+import Portfolio from "../../Pages/Portfolio/Portfolio";
 // import Serviceentry from '../../Pages/Service/Serviceentry'
 
 const Entry = () => {
@@ -16,6 +17,7 @@ const Entry = () => {
           <Route path="services" element={<Service />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="portfolio" element={<Portfolio />} />
         </Route>
       </Routes>
     </BrowserRouter>
