@@ -1,31 +1,30 @@
-import React from 'react'
-import xright from '../../Components/Imagefile/xright.png'
-import { Teamserve } from '../../Components/Data/Arrays'
+import React from "react";
+import xright from "../../Components/Imagefile/xright.png";
+import { Teamserve } from "../../Components/Data/Arrays";
 
 const Serveteam = () => {
   return (
-    <div className='py-5 px-8 md:px-20 md:py-[4%] bg-black relative'>
-         <div className='absolute w-[100px] md:w-[250px] bottom-0 right-0 '>
-        <img src={xright} alt='name'/>
+    <section className="py-20 bg-black text-white relative">
+      <div className="absolute w-[100px] md:w-[250px] bottom-0 right-0 ">
+        <img src={xright} alt="name" />
       </div>
-      
-    <div className='flex flex-col md:flex-row items-center justify-center gap-10 flex-wrap'>
-    {
-        Teamserve.map((x)=>{
-            return(
-            <div key={x.id} className='w-[100%] md:w-[25%] lg:w-[30%]  text-white text-left'>
-                <img src={x.image}/>
-                <h1 className='font-bold text-[24px] mb-3'>{x.name}</h1>
-                <p className='text-[15px] md:text-[18px]'>{x.writeup}</p>
-            </div>
-            )
-          
-        })
-    }
-    </div>
-     
-    </div>
-  )
-}
+      <div className="container max-w-7xl">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          {Teamserve.map((x) => {
+            return (
+              <div key={x.id}>
+                <div className="mb-6">
+                  <img src={x.image} />
+                </div>
+                <h4 className="font-semibold text-xl mb-3">{x.name}</h4>
+                <p className="text-gray-300">{x.writeup}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default Serveteam
+export default Serveteam;

@@ -1,51 +1,93 @@
-import React, { useState } from 'react'
-import { FaBarsStaggered } from "react-icons/fa6";
-import { FaTimes } from "react-icons/fa";
-import { NavLink } from 'react-router-dom';
-import { navlinks } from '../Data/Arrays';
-import galdlogo from '../Imagefile/galdunX Logo.png'
+import React, { useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
+
+import galdlogo from "../Imagefile/galdunX Logo.png";
+
+import { Button } from "../ui/button";
+import { Sheet, SheetTrigger } from "../ui/sheet";
+
+import { MdArrowOutward } from "react-icons/md";
+import { MdArrowForward } from "react-icons/md";
+import { HiOutlineMenuAlt1 } from "react-icons/hi";
+import MobileNav from "./MobileNav";
 
 const Navbar = () => {
-  const [open, setopen] = useState(false)
+  const [open, setopen] = useState(false);
+  const pages = [
+    {
+      page: "home",
+      path: "/",
+    },
+    {
+      page: "about",
+      path: "/about",
+    },
+    {
+      page: "services",
+      path: "/services",
+    },
+    {
+      page: "portfolio",
+      path: "/portfolio",
+    },
+  ];
+
+  const location = useLocation();
+  const { pathname } = location;
 
   const togglenavbar = () => {
-    setopen(!open)
-  }
+    setopen(!open);
+  };
   return (
-    <div className="fixed z-[100] w-[98%] md:w-[95%] lg:w-full mt-5">
-      <div className='flex sticky bg-transparent border-gray-700 border text-white container mx-auto rounded-full justify-between items-center  py-3 md:py-4 px-5  z-10 w-full top-[10px] right-0 backdrop-blur-lg md:px-15 lg:px-20 shadow-lg'>
-        <div>
+    <div className="fixed z-[100] w-full">
+      <div className=" container max-w-7xl mt-5">
+        <div className="flex  bg-transparent border-gray-500 border text-white rounded-full justify-between items-center  py-3 md:py-4 px-8 z-10 w-full top-[10px] right-0 backdrop-blur-lg">
           <div className="w-[100px] md:w-[120px]">
-           
-            <img src={galdlogo} alt="Galdun" className='block'/>
+            <img src={galdlogo} alt="Galdun" className="block" />
           </div>
-        </div>
-        <div className=' flex gap-3 md:gap-7'>
-          <button className='px-3 py-2 md:py-2.5 rounded-3xl bg-white  text-black font-semibold text-[13px] md:text-sm' >Start a project</button>
-          <button className='inline-block font-extrabold text-[25px] text-white' onClick={togglenavbar}> {open ? <FaTimes /> : <FaBarsStaggered className='font-extrabold' />} </button>
-
+          <ul className="hidden gap-3 md:flex">
+            {pages.map((page) => (
+              <li
+                className={`uppercase text-[12px] ${
+                  pathname === page.path ? "text-pry" : ""
+                } hover:text-pry`}
+              >
+                <Link to={page.path} className="flex">
+                  {" "}
+                  {pathname === page.path ? (
+                    <MdArrowForward className="text-lg" />
+                  ) : (
+                    <MdArrowOutward className="text-lg" />
+                  )}{" "}
+                  {page.page}
+                </Link>
+              </li>
+            ))}
+          </ul>
           <div>
-            {open && (
-              <div className='fixed top-0 right-0 z-[-1] flex flex-col justify-center items-center w-full h-[700px] p-12 bg-neutral-950  shadow-lg md:w-[40%] md:h-[750px] '  >
-                <ul>
-                  {navlinks.map((x) => {
-                    return (
-                      <li key={x.id} className='py-5'>
-                        <NavLink to={x.link} className={({isActive}) =>(isActive ? 'active' : 'link')} onClick={togglenavbar}>{x.name}</NavLink>
-                        {/* i just want to see */}
-                      </li>
-                    )
-
-                  })}
-                </ul>
-              </div>
-            )}
+            <Link to="contact" className="hidden md:block">
+              <Button className="flex md:gap-2">
+                Contact Us <MdArrowOutward />
+              </Button>
+            </Link>
+            <div className="block md:hidden">
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button
+                    size="sm"
+                    className="bg-transparent px-2 text-lg border-none rounded-full hover:bg-pry group duration-300 transform"
+                  >
+                    <HiOutlineMenuAlt1 className="text-white group-hover:text-black" />
+                  </Button>
+                </SheetTrigger>
+                <MobileNav />
+              </Sheet>
+            </div>
           </div>
         </div>
-
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
