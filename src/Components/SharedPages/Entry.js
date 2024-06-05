@@ -6,11 +6,13 @@ import Service from "../../Pages/ServiceFile/Service";
 import About from "../../Pages/AboutFile/About";
 import Contact from "../../Pages/ContactFile/Contact";
 import Portfolio from "../../Pages/Portfolio/Portfolio";
+import ScrollToTop from "../../ScrollToTop";
 // import Serviceentry from '../../Pages/Service/Serviceentry'
 
 const Entry = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Sharedcomponent />}>
           <Route index element={<Home />} />
