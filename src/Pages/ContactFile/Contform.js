@@ -85,7 +85,7 @@ const Contform = () => {
                 </div>
                 <FormField
                   control={form.control}
-                  name="email"
+                  name="message"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>Message</FormLabel>
