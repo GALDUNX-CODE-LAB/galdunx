@@ -22,11 +22,11 @@ function Hero() {
           </p>
           <div className="flex gap-3 justify-center">
             <div>
-              <Link to="contact">
+              <a href="https://t.me/sheezey1" target="_blank">
                 <Button variant="outline" className="flex gap-2">
                   Get a Quote <MdArrowOutward />
                 </Button>
-              </Link>
+              </a>
             </div>
             <div>
               <Link to="services">
