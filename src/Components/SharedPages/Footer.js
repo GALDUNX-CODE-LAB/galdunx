@@ -1,12 +1,10 @@
 import React from "react";
-import { CiCirclePlus } from "react-icons/ci";
-import { navlinks, socialLinks } from "../Data/Arrays";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { socialLinks } from "../Data/Arrays";
+import { Link, useLocation } from "react-router-dom";
 import galdlogo from "../Imagefile/galdunX Logo.png";
 import { MdArrowForward, MdArrowOutward } from "react-icons/md";
 
 const Footer = () => {
-  const navigate = useNavigate();
   const location = useLocation();
   const { pathname } = location;
   const pages = [
@@ -23,8 +21,8 @@ const Footer = () => {
       path: "/services",
     },
     {
-      page: "portfolio",
-      path: "/portfolio",
+      page: "contact",
+      path: "/contact",
     },
   ];
 

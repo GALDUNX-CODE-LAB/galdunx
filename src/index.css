@@ -5,16 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Syne:wght@400..800&display=swap");
 
 * {
-  font-family: "Inter", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h1 > span,
-h2 > span,
-h3 > span {
-  font-family: "Syne", sans-serif;
+  font-family: "Syne";
 }
 
 @layer base {
@@ -90,6 +81,9 @@ h3 > span {
   }
 }
 
+.font-syne {
+  font-family: "Syne";
+}
 .hero {
   background: url("./Assets/Images/hero_bg.png") no-repeat;
   background-size: cover;
@@ -178,4 +172,13 @@ h3 > span {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+body {
+  background: #262626;
+}
+
+.swiper {
+  min-height: 300px;
+
 }

@@ -1,14 +1,14 @@
+import Service from "../../Components/Home/Service";
 import React from "react";
 import {
   FaLaptopCode,
   FaMobileAlt,
   FaPencilRuler,
   FaCube,
+  FaBook,
 } from "react-icons/fa";
-import Service from "./Service";
-import { Link } from "react-router-dom";
 
-function WhatWeDo() {
+function OurServices() {
   const services = [
     {
       title: "Web Development",
@@ -34,15 +34,21 @@ function WhatWeDo() {
         "Decentralized applications (dApps) and smart contracts. Secure and transparent blockchain solutions.",
       icon: <FaCube size={60} className="text-black text-3xl" />,
     },
+    {
+      title: "Project Documentation",
+      description:
+        "We write documentation for any project, Ideas or enterprise application.",
+      icon: <FaBook size={60} className="text-black text-3xl" />,
+    },
   ];
 
   return (
     <section className="py-14  text-[#262626] bg-white">
       <div className="container">
         <div className="mb-10">
-          <h2 className="underline mb-2 font-semibold">WHAT WE DO</h2>
+          <h2 className="underline mb-2 font-semibold">Our service</h2>
           <h3 className="text-3xl lg:text-6xl font-bold lg:w-[70%]">
-            Boost your business with our key services
+            Here's a list of what we can do for you
           </h3>
         </div>
 
@@ -56,20 +62,13 @@ function WhatWeDo() {
             />
           ))}
         </div>
-        <div className="flex justify-center p-5">
-          <Link to={"/services"} className="flex">
-            <button className=" rounded-full text-sm bg-pry h-[100px] w-[100px] px-5 hover:bg-secondary hover:text-pry transition-colors duration-300">
-              See All Services
-            </button>
-          </Link>
-        </div>
 
         {/* Our Work Section */}
         <div className="wrap mt-16">
-          <div className="flex lg:flex-nowrap flex-wrap justify-between">
-            <p className="font-syne text-lg">Projects</p>
+          <div className="flex gap-5 lg:flex-nowrap flex-wrap justify-between">
+            <p className="font-syne text-lg">Portfolio</p>
             <h1 className="text-3xl lg:text-6xl lg:w-1/2 font-semibold">
-              See the results of our work across{" "}
+              View Our Previous Work
               <span className="bg-pry underline underline-offset-8 font-syne">
                 industries
               </span>
@@ -85,4 +84,4 @@ function WhatWeDo() {
   );
 }
 
-export default WhatWeDo;
+export default OurServices;

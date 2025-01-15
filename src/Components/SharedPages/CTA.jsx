@@ -5,7 +5,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 export function CTA() {
   return (
-    <section className="py-20 bg-pry cta text-black">
+    <section className="py-20 bg-pry  text-black">
       <div className="container max-w-7xl">
         <div className="max-w-2xl space-y-5">
           <p className="text-gray-600 text-2xl">

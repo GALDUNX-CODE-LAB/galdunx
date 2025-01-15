@@ -3,8 +3,8 @@ import { think } from "../../Components/Data/Arrays";
 
 const Envisionpage = () => {
   return (
-    <section className="bg-black text-white py-20">
-      <div className="container max-w-7xl grid grid-cols-1 gap-y-8 gap-x-4 md:grid-cols-3">
+    <section className="text-white py-20 bg-black bg-opacity-10">
+      <div className="container grid grid-cols-1 gap-y-8 gap-x-4 md:grid-cols-3">
         {think.map((x, index) => {
           return (
             <div

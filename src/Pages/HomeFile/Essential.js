@@ -1,7 +1,5 @@
 import React from "react";
 import {
-  FaArrowLeft,
-  FaArrowRight,
   FaCode,
   FaPencilRuler,
   FaRegLightbulb,
@@ -9,7 +7,6 @@ import {
   FaSearch,
   FaVials,
 } from "react-icons/fa";
-import { essential } from "../../Components/Data/Arrays";
 import { MdArrowOutward } from "react-icons/md";
 import { Button } from "../../Components/ui/button";
 import { Link } from "react-router-dom";
@@ -60,10 +57,12 @@ const Essential = () => {
     },
   ];
   return (
-    <section className="bg-black py-10">
-      <div className="container max-w-7xl flex-col md:flex-row flex gap-10  md:items-center">
+    <section className="py-10 bg-black bg-opacity-10">
+      <div className="container flex-col md:flex-row flex gap-16  md:items-center">
         <div className="w-[100%] md:w-[30%]  text-white space-y-5">
-          <h3 className="text-3xl font-bold">Our Creative Workflow</h3>
+          <h3 className="text-4xl lg:text-6xl font-bold">
+            Our Creative Workflow
+          </h3>
           <div>
             <Link to="/contact">
               <Button className="flex gap-2 w-auto">
@@ -73,22 +72,26 @@ const Essential = () => {
           </div>
           {/* <button className='bg-[#7a58ff] px-4 py-2.5 rounded-3xl text-white text-[25px] md:text-sm'> </button>÷ */}
         </div>
-        <div className="w-[100%] md:w-[60%] flex items-center  py-3 px-3  flex-col gap-7  first">
+        <div className="w-[100%] flex items-center  py-3 px-3  flex-col gap-7  first">
           {processes.map((process) => {
             return (
               <div
                 key={process.id}
-                className="flex gap-10 w-full  text-gray-400 hover:text-white"
+                className="flex gap-10 w-full  text-gray-400 hover:text-white transition-all duration-300 group"
               >
-                <div className="p-[20px] h-[80px] rounded-full ring-2 items-center ring-gray-400 hover:ring-white text-[40px]">
+                <div className="p-[20px] h-[80px] rounded-full ring-2 items-center ring-gray-400 group-hover:text-secondary group-hover:bg-pry  text-[40px] transition-colors duration-300">
                   {process.icon}
                 </div>
                 <div>
                   <div className="flex justify-between items-center">
-                    <h4 className="text-2xl font-bold mb-2">{process.title}</h4>
+                    <h4 className="text-2xl font-bold mb-2 text-pry">
+                      {process.title}
+                    </h4>
                     <button>{process.id}</button>
                   </div>
-                  <p>{process.description}</p>
+                  <p className="group-hover:text-white transition-all duration-300">
+                    {process.description}
+                  </p>
                 </div>
               </div>
             );
