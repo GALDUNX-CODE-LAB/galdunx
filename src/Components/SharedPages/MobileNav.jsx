@@ -1,12 +1,6 @@
 import React from "react";
 
-import {
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetClose,
-} from "../ui/sheet";
+import { SheetContent, SheetClose } from "../ui/sheet";
 import { Link, useLocation } from "react-router-dom";
 import { MdArrowForward, MdArrowOutward } from "react-icons/md";
 import { useRef } from "react";
