@@ -1,5 +1,6 @@
 import React from "react";
 import { HiArrowUpRight } from "react-icons/hi2";
+import IndustryCard from "./IndustryCard";
 
 export default function Industries() {
   const expertiseAreas = [
@@ -37,24 +38,7 @@ export default function Industries() {
         <div className="flex flex-wrap md:flex-nowrap gap-5">
           <div className="flex  flex-col gap-5">
             {expertiseAreas.map((i, index) => (
-              <div
-                className="card cursor-pointer flex flex-col group hover:bg-secondary justify-between lg:h-[250px] rounded-3xl bg-neutral-200 w-full p-10 transition-all duration-300"
-                key={index}
-              >
-                <div className="header flex justify-between">
-                  <h1 className="text-4xl font-semibold group-hover:text-pry transition-all duration-300">
-                    {i.title}
-                  </h1>{" "}
-                  <HiArrowUpRight
-                    size={30}
-                    className="group-hover:text-white transition-all duration-300"
-                  />
-                </div>
-
-                <p className="text-lg group-hover:text-gray-400 transition-all duration-300">
-                  {i.text}
-                </p>
-              </div>
+              <IndustryCard key={index} title={i.title} text={i.text} />
             ))}
           </div>
 
