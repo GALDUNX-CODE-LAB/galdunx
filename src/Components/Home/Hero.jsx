@@ -1,15 +1,13 @@
-import React from "react";
-import FramerContainer from "../SharedPages/FramerContainer";
-import { delay } from "framer-motion";
+import { FramerContainer } from "../SharedPages/FramerContainer";
 
 function Hero() {
   return (
     <div className="wrap py-32">
       <div className="container">
         <FramerContainer
-        initial={{ opacity: 0, y: -100 }}
+        initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
+        transition={{ duration: 0.8 }}
         viewport={{once: true}}
         className="wrap flex flex-wrap lg:flex-nowrap lg:gap-3 mb-5">
           <p className="text-white text-lg">Your go-to team for: </p>
@@ -27,9 +25,9 @@ function Hero() {
         </FramerContainer>
 
         <FramerContainer
-        initial={{ opacity: 0, y: -100 }}
+        initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
+        transition={{ duration: 0.8}}
         viewport={{once: true}}
         className="text-wrap text-white">
           <h1 className="text-4xl lg:text-6xl font-bold">
@@ -43,9 +41,9 @@ function Hero() {
         </FramerContainer>
 
         <FramerContainer
-        initial={{ opacity: 0, y: -100 }}
+        initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
         viewport={{once: true}}
         className="wrap flex justify-end mt-10">
           <div className="lg:w-[50%] text-lg">

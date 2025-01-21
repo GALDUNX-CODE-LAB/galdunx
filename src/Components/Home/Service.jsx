@@ -1,12 +1,12 @@
 import React from "react";
-import FramerContainer from "../SharedPages/FramerContainer";
+import {FramerContainer} from "../SharedPages/FramerContainer";
 
 const Service = ({ icon, title, description, index }) => {
   return (
     <FramerContainer
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.5, delay: index * 0.2 }}        
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: index * 0.2 }}        
         viewport={{once: true}}
     className="flex lg:flex-nowrap flex-wrap lg:flex-row flex-col-reverse lg:items-center border p-5 rounded-xl hover:bg-[#262626] gap-4 group transition-colors duration-300">
       <div className="wrap">

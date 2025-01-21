@@ -1,5 +1,6 @@
 import React from "react";
 import { HiArrowUpRight } from "react-icons/hi2";
+import {FramerContainer} from "../SharedPages/FramerContainer";
 
 export default function Industries() {
   const expertiseAreas = [
@@ -10,6 +11,14 @@ export default function Industries() {
     {
       title: "Healthcare",
       text: "We develop patient-centric designs that simplify complex processes, enhance patient outcomes, and ensure secure, compliant handling of sensitive information, all while improving overall user satisfaction.",
+    },
+    {
+      title: "Web3",
+      text: "We craft decentralized solutions and friendly interfaces to help you unlock the full potential of Web3 technologies, fostering trust and engagement in the decentralized ecosystem.",
+    },
+    {
+      title: "Blockchain",
+      text: "Our expertise in blockchain ensures secure, transparent, and efficient solutions, enabling you to innovate with confidence while building trust in a decentralized world.",
     },
   ];
 
@@ -25,7 +34,7 @@ export default function Industries() {
   ];
 
   return (
-    <div className="wrap  bg-white py-16">
+    <div className="wrap bg-white py-16">
       <div className="container">
         <div className="mb-10">
           <h2 className="underline mb-2 font-semibold">Our Expertise</h2>
@@ -33,11 +42,15 @@ export default function Industries() {
             Discover the industries we specialize in
           </h3>
         </div>
-
-        <div className="flex flex-wrap md:flex-nowrap gap-5">
-          <div className="flex  flex-col gap-5">
+        
+        <div className="">
+          <div className="flex gap-5">
             {expertiseAreas.map((i, index) => (
-              <div
+              <FramerContainer
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}   
+                // viewport={{once: true}}
                 className="card cursor-pointer flex flex-col group hover:bg-secondary justify-between lg:h-[250px] rounded-3xl bg-neutral-200 w-full p-10 transition-all duration-300"
                 key={index}
               >
@@ -54,13 +67,17 @@ export default function Industries() {
                 <p className="text-lg group-hover:text-gray-400 transition-all duration-300">
                   {i.text}
                 </p>
-              </div>
+              </FramerContainer>
             ))}
           </div>
 
-          <div className="flex flex-col gap-5  lg:mt-16">
+          <div className="flex gap-5 lg:mt-16">
             {expertiseAreas2.map((i, index) => (
-              <div
+              <FramerContainer
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}        
+                // viewport={{once: true}}
                 className="card cursor-pointer group hover:bg-secondary flex flex-col justify-between lg:h-[250px] rounded-3xl bg-neutral-200 w-full p-10 transition-all duration-300"
                 key={index}
               >
@@ -77,10 +94,11 @@ export default function Industries() {
                 <p className="text-lg group-hover:text-gray-400 transition-all duration-300">
                   {i.text}
                 </p>
-              </div>
+              </FramerContainer>
             ))}
           </div>
-          <div className=""></div>
+          
+          
         </div>
       </div>
     </div>
