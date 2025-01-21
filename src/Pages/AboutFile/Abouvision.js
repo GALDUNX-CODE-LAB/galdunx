@@ -1,6 +1,7 @@
 import React from "react";
 import {FramerContainer, FramerHeader3} from "../../Components/SharedPages/FramerContainer";
 import realworld from "../../Components/Imagefile/realworld.png";
+import { delay } from "motion";
 const Abouvision = () => {
   return (
     <div className=" text-white bg-black bg-opacity-10 py-16">
@@ -8,8 +9,8 @@ const Abouvision = () => {
         <div className="mb-10">
           <h2 className="underline mb-2 font-semibold">Our Mission</h2>
           <FramerHeader3
-            initial={{ opacity: 0}}
-            whileInView={{ opacity: 1}}
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{once: true}}
           className="text-3xl lg:text-5xl font-bold lg:w-[70%]">
@@ -30,12 +31,17 @@ const Abouvision = () => {
           <FramerContainer
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{once: true}}
           >
             <img src={realworld} alt="name" />
           </FramerContainer>
-          <div className="text-left">
+          <FramerContainer 
+           initial={{ opacity: 0, x: 100 }}
+           whileInView={{ opacity: 1, x: 0 }}
+           transition={{ duration: 0.8, delay: 0.4 }}
+           viewport={{once: true}}
+          className="text-left">
             <h1 className="text-3xl lg:text-5xl mb-4 font-bold">
               About{" "}
               <span className="text-pry underline underline-offset-8">
@@ -52,7 +58,7 @@ const Abouvision = () => {
               shared commitment to building high-quality products and providing
               top-notch services.
             </p>
-          </div>
+          </FramerContainer>
         </div>
       </div>
     </div>
