@@ -47,11 +47,12 @@ function WhatWeDo() {
         </div>
 
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-          {services.map((service) => (
+          {services.map((service, i) => (
             <Service
               description={service.description}
               icon={service.icon}
               title={service.title}
+              index={i}
               key={service.title}
             />
           ))}

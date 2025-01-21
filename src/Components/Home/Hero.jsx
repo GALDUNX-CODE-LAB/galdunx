@@ -1,10 +1,17 @@
 import React from "react";
+import FramerContainer from "../SharedPages/FramerContainer";
+import { delay } from "framer-motion";
 
 function Hero() {
   return (
     <div className="wrap py-32">
       <div className="container">
-        <div className="wrap flex flex-wrap lg:flex-nowrap lg:gap-3 mb-5">
+        <FramerContainer
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        viewport={{once: true}}
+        className="wrap flex flex-wrap lg:flex-nowrap lg:gap-3 mb-5">
           <p className="text-white text-lg">Your go-to team for: </p>
           <div className="wrap space-x-3">
             <button className="px-2 text-sm rounded-full bg-white text-black">
@@ -17,9 +24,14 @@ function Hero() {
               Designs
             </button>
           </div>
-        </div>
+        </FramerContainer>
 
-        <div className="text-wrap text-white">
+        <FramerContainer
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        viewport={{once: true}}
+        className="text-wrap text-white">
           <h1 className="text-4xl lg:text-6xl font-bold">
             Innovative Design & Development Solutions{" "}
             <span className="text-pry underline underline-offset-8">
@@ -28,9 +40,14 @@ function Hero() {
             Exceptional SMEs &{" "}
             <span className=" underline underline-offset-8">Startups</span>
           </h1>
-        </div>
+        </FramerContainer>
 
-        <div className="wrap flex justify-end mt-10">
+        <FramerContainer
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{once: true}}
+        className="wrap flex justify-end mt-10">
           <div className="lg:w-[50%] text-lg">
             <p className="text-gray-300">
               <span className="text-pry underline underline-offset-8">
@@ -53,7 +70,7 @@ function Hero() {
               </button>
             </a>
           </div>
-        </div>
+        </FramerContainer>
       </div>
     </div>
   );
