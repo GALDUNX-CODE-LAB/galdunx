@@ -14,7 +14,7 @@ const Serveteam = () => {
             return (
               <div key={x.id}>
                 <div className="mb-6">
-                  <img src={x.image} />
+                  <img src={x.image} alt={"ll"} />
                 </div>
                 <h4 className="font-semibold text-xl mb-3">{x.name}</h4>
                 <p className="text-gray-300">{x.writeup}</p>

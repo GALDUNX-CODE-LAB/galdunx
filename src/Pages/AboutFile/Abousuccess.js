@@ -1,8 +1,6 @@
 import React from "react";
 import { successdiv } from "../../Components/Data/Arrays";
 import AliceCarousel from "react-alice-carousel";
-import { FaArrowRight } from "react-icons/fa";
-import ximage from "../../Components/Imagefile/Union.png";
 import xright from "../../Components/Imagefile/xright.png";
 
 const Abousuccess = () => {
